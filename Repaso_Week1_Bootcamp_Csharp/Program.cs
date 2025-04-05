@@ -7,6 +7,26 @@ namespace Repaso_Week1_Bootcamp_Csharp
         static void Main(string[] args)
         {
 
+
+            //Saber si un número es par o impar
+
+            int isPair;
+            Console.WriteLine("Ingresa el primer número:");
+
+            isPair = Convert.ToInt32(Console.ReadLine());
+
+            if (isPair % 2 == 0)
+            {
+                Console.WriteLine($"El número {isPair} es par");
+
+            }
+            else
+            {
+                Console.WriteLine($"El número {isPair} es no es par");
+            }
+
+            //Validar mayor de 3 números
+
             int primerNumero;
             int segundoNumero;
             int tercerNumero;
