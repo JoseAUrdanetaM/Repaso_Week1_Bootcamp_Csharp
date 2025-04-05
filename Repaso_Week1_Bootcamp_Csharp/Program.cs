@@ -6,10 +6,7 @@ namespace Repaso_Week1_Bootcamp_Csharp
     {
         static void Main(string[] args)
         {
-
-
             //Saber si un número es par o impar
-
             int isPair;
             Console.WriteLine("Ingresa el primer número:");
 
@@ -18,7 +15,6 @@ namespace Repaso_Week1_Bootcamp_Csharp
             if (isPair % 2 == 0)
             {
                 Console.WriteLine($"El número {isPair} es par");
-
             }
             else
             {
@@ -26,7 +22,6 @@ namespace Repaso_Week1_Bootcamp_Csharp
             }
 
             //Validar mayor de 3 números
-
             int primerNumero;
             int segundoNumero;
             int tercerNumero;
@@ -37,14 +32,11 @@ namespace Repaso_Week1_Bootcamp_Csharp
             Console.WriteLine("¿Cuál es el número mayor de 3 números: ");
             Console.WriteLine("============================");
 
-
             Console.WriteLine("Ingresa el primer número:");
-
             primerNumero = Convert.ToInt32(Console.ReadLine());
             numeroMenor = primerNumero;
 
             Console.WriteLine("Ingresa el segundo número:");
-
             segundoNumero = Convert.ToInt32(Console.ReadLine());
             if(segundoNumero < numeroMenor)
             {
@@ -52,7 +44,6 @@ namespace Repaso_Week1_Bootcamp_Csharp
             }
 
             Console.WriteLine("Ingresa el Tercer número:");
-
             tercerNumero = Convert.ToInt32(Console.ReadLine());
             if (tercerNumero < numeroMenor)
             {
@@ -61,18 +52,17 @@ namespace Repaso_Week1_Bootcamp_Csharp
 
             Console.WriteLine($"El número menor es: { numeroMenor}");
 
-            string seleccion;
             //Obtener el área del circulo o rectangulo. 
-            Console.WriteLine("");
-            Console.WriteLine("=============== ============");
-            Console.WriteLine("Elegir opción de que área comprobar");
-            Console.WriteLine("A: Circulo - B: Rectangulo");
-
-            seleccion = Console.ReadLine();
+            string seleccion;
             double circulo;
             double cuadradoAncho;
             double cuadradoAlto;
             double resultado;
+            Console.WriteLine("");
+            Console.WriteLine("=============== ============");
+            Console.WriteLine("Elegir opción de que área comprobar");
+            Console.WriteLine("A: Circulo - B: Rectangulo");
+            seleccion = Console.ReadLine();
 
             //Comprobar si has escogido circulo o cuadrado
             Console.WriteLine($"Has seleccionado: {seleccion}");
