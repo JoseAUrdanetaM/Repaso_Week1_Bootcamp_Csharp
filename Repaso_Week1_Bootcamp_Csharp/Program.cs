@@ -1,4 +1,6 @@
-﻿namespace Repaso_Week1_Bootcamp_Csharp
+﻿using System.Timers;
+
+namespace Repaso_Week1_Bootcamp_Csharp
 {
     internal class Program
     {
@@ -39,20 +41,46 @@
 
             Console.WriteLine($"El número menor es: { numeroMenor}");
 
-
+            string seleccion;
             //Obtener el área del circulo o rectangulo. 
             Console.WriteLine("");
-            Console.WriteLine("===============  ============");
+            Console.WriteLine("=============== ============");
             Console.WriteLine("Elegir opción de que área comprobar");
-            Console.WriteLine("============================");
+            Console.WriteLine("A: Circulo - B: Rectangulo");
 
-
+            seleccion = Console.ReadLine();
+            double circulo;
+            double cuadradoAncho;
+            double cuadradoAlto;
+            double resultado;
 
             //Comprobar si has escogido circulo o cuadrado
-            //Si es circulo necesito que pidas el radio
-            //Si has elegido rectangulo, tendría que pedir largo y ancho
-            //Si has escodigo una opción que no es circulo o rectangulo, un mensaje de error
+            Console.WriteLine($"Has seleccionado: {seleccion}");
 
+            //Si es circulo necesito que pidas el radio
+            if (seleccion == "a")
+            {
+                Console.WriteLine("Ingrese el radio del circulo: ");
+                circulo = Convert.ToInt32(Console.ReadLine());
+                resultado = 3.14 * (circulo * circulo);
+                Console.WriteLine($"El resultado es: {resultado}");
+            }
+            //Si has elegido rectangulo, tendría que pedir largo y ancho
+            else if (seleccion == "b") {
+                Console.WriteLine("Ingrese el ancho: ");
+                cuadradoAncho = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Ingrese el alto: ");
+                cuadradoAlto = Convert.ToInt32(Console.ReadLine());
+
+                resultado = cuadradoAncho * cuadradoAlto;
+
+                Console.WriteLine($"El resultado es: {resultado}");
+            }
+            //Si has escodigo una opción que no es circulo o rectangulo, un mensaje de error
+            else
+            {
+                Console.WriteLine("No has seleccionado correctamente una de las opciones");
+            }
 
 
         }
