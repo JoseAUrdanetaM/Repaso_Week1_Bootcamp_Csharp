@@ -8,21 +8,45 @@
             int primerNumero;
             int segundoNumero;
             int tercerNumero;
+            int numeroMenor;
 
             Console.WriteLine("");
             Console.WriteLine("============================");
             Console.WriteLine("¿Cuál es el número mayor de 3 números: ");
             Console.WriteLine("============================");
+
+
+            Console.WriteLine("Ingresa el primer número:");
 
             primerNumero = Convert.ToInt32(Console.ReadLine());
-            segundoNumero = Convert.ToInt32(Console.ReadLine());
-            tercerNumero = Convert.ToInt32(Console.ReadLine());
+            numeroMenor = primerNumero;
 
-            //Obtener el área del circulo 
+            Console.WriteLine("Ingresa el segundo número:");
+
+            segundoNumero = Convert.ToInt32(Console.ReadLine());
+            if(segundoNumero < numeroMenor)
+            {
+                numeroMenor=segundoNumero;
+            }
+
+            Console.WriteLine("Ingresa el Tercer número:");
+
+            tercerNumero = Convert.ToInt32(Console.ReadLine());
+            if (tercerNumero < numeroMenor)
+            {
+                numeroMenor = tercerNumero;
+            }
+
+            Console.WriteLine($"El número menor es: { numeroMenor}");
+
+
+            //Obtener el área del circulo o rectangulo. 
             Console.WriteLine("");
             Console.WriteLine("===============  ============");
-            Console.WriteLine("¿Cuál es el número mayor de 3 números: ");
+            Console.WriteLine("Elegir opción de que área comprobar");
             Console.WriteLine("============================");
+
+
 
             //Comprobar si has escogido circulo o cuadrado
             //Si es circulo necesito que pidas el radio
