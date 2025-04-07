@@ -16,23 +16,18 @@
             //    resutado = valorTabla * contadorTabla;
             //    Console.WriteLine("La tabla del número: " + valorTabla + " es igual a: " + valorTabla + "x" + contadorTabla + "=" + resutado);
             //    contadorTabla++;
-            //}
-
-
 
             // Bucle estrella
             int inicio = 1;
             while (inicio <= 5)
             {
                 int b = 1;
-
                 while (b <= inicio)
                 {
                     Console.Write(b + " ");
                     b++;
                 }
-                Console.Write( "*");
-
+                Console.Write("*");
                 Console.WriteLine();
                 inicio++;
             }
