@@ -6,16 +6,16 @@
         {
             //Ejercicio #1 Tabla de Multiplicar 
 
-            //Console.WriteLine("Bienvenido a la tabla de multiplicación, ingrese el número de tabla a multiplicar:");
-            //int baseNumber = Convert.ToInt32(Console.ReadLine());
-            //int result;
-            //Console.WriteLine("");
-            //Console.WriteLine($"Tabla del {baseNumber}");
-            //for (int i = 0; i < 11; i++) 
-            //{
-            //    result = baseNumber * i;
-            //    Console.WriteLine($"{baseNumber} x {i} = {result}");
-            //}
+            Console.WriteLine("Bienvenido a la tabla de multiplicación, ingrese el número de tabla a multiplicar:");
+            int baseNumber = Convert.ToInt32(Console.ReadLine());
+            int result;
+            Console.WriteLine("");
+            Console.WriteLine($"Tabla del {baseNumber}");
+            for (int i = 0; i < 11; i++)
+            {
+                result = baseNumber * i;
+                Console.WriteLine($"{baseNumber} x {i} = {result}");
+            }
 
             //Ejercicio #2 Patrones en escalera 
 
