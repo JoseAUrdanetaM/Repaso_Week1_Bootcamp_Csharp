@@ -1,6 +1,4 @@
-﻿using System.Timers;
-
-namespace Repaso_Week1_Bootcamp_Csharp
+﻿namespace Repaso_Week1_Bootcamp_Csharp
 {
     internal class Program
     {
@@ -38,9 +36,9 @@ namespace Repaso_Week1_Bootcamp_Csharp
 
             Console.WriteLine("Ingresa el segundo número:");
             segundoNumero = Convert.ToInt32(Console.ReadLine());
-            if(segundoNumero < numeroMenor)
+            if (segundoNumero < numeroMenor)
             {
-                numeroMenor=segundoNumero;
+                numeroMenor = segundoNumero;
             }
 
             Console.WriteLine("Ingresa el Tercer número:");
@@ -50,7 +48,7 @@ namespace Repaso_Week1_Bootcamp_Csharp
                 numeroMenor = tercerNumero;
             }
 
-            Console.WriteLine($"El número menor es: { numeroMenor}");
+            Console.WriteLine($"El número menor es: {numeroMenor}");
 
             //Obtener el área del circulo o rectangulo. 
             string seleccion;
@@ -76,7 +74,8 @@ namespace Repaso_Week1_Bootcamp_Csharp
                 Console.WriteLine($"El resultado es: {resultado}");
             }
             //Si has elegido rectangulo, tendría que pedir largo y ancho
-            else if (seleccion == "b") {
+            else if (seleccion == "b")
+            {
                 Console.WriteLine("Ingrese el ancho: ");
                 cuadradoAncho = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Ingrese el alto: ");

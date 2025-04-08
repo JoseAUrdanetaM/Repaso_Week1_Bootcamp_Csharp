@@ -26,10 +26,12 @@
 
             Console.WriteLine("");
 
-            for (int i = 1; i <= baseTriangleNumber; i++) {
-                for (int b = 1; b <= i; b++) { 
+            for (int i = 1; i <= baseTriangleNumber; i++)
+            {
+                for (int b = 1; b <= i; b++)
+                {
                     Console.Write(b + " ");
-        
+
                 }
                 Console.WriteLine();
             }
