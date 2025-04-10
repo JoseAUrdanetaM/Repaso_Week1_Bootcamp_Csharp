@@ -18,7 +18,7 @@
                 {
                     Console.Write(b + " ");
                 }
-                Console.WriteLine("");
+                Console.WriteLine(""); 
             }
             Console.WriteLine("Se acabó el bucle");
         }
