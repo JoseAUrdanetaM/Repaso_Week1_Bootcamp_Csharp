@@ -1,4 +1,4 @@
-﻿namespace WhileLoop
+﻿    namespace WhileLoop
 {
     internal class Program
     {
