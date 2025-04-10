@@ -37,14 +37,13 @@
              
                 for (int b = baseTriangleNumber; b >= i; b--)
                 {
-                    Console.Write("- ");
+                    Console.Write("-");
                 }
 
                 for (int j = 1; j <= i; j++)
                 {
                     Console.Write("* ");
                 }
-
                 Console.WriteLine("");
             }
 
