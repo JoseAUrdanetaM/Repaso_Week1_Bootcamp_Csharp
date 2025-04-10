@@ -182,45 +182,45 @@
 
 
             // Filtrar los libros con stock de mas de 10 unidades
-//            List<Libro> stockSobreDiez = libros.FindAll(p => p.Stock > 10);
-//            Console.WriteLine($"Libros con más de 10 unidades:");
-//            foreach(var stock in stockSobreDiez)
-//            {
-//                Console.WriteLine($"{stock.Nombre}, {stock.Stock}");
-//            }
+            List<Libro> stockSobreDiez = libros.FindAll(p => p.Stock > 10);
+            Console.WriteLine($"Libros con más de 10 unidades:");
+            foreach(var stock in stockSobreDiez)
+            {
+                Console.WriteLine($"{stock.Nombre}, {stock.Stock}");
+            }
 
-//            Console.WriteLine("");
+            Console.WriteLine("");
 
-//            // Filtrar el stock por precio mas grande de 10.99 soles
-//            List<Libro> precios = libros.FindAll(p => p.Precio > 10.99);
-//            Console.WriteLine($"Libros mayores a S/10.99:");
-//            foreach (var precio in precios)
-//            {
-//                Console.WriteLine($"{precio.Nombre}, S/{precio.Precio}");
-//            }
-//            Console.WriteLine("");
+            // Filtrar el stock por precio mas grande de 10.99 soles
+            List<Libro> precios = libros.FindAll(p => p.Precio > 10.99);
+            Console.WriteLine($"Libros mayores a S/10.99:");
+            foreach (var precio in precios)
+            {
+                Console.WriteLine($"{precio.Nombre}, S/{precio.Precio}");
+            }
+            Console.WriteLine("");
 
-//            // Encontrar el indice del libro que empiece con "El"
-//            int indiceMLetra = libros.FindIndex(p => p.Nombre.StartsWith("El"));
-//            Console.WriteLine($"Índice del libro que comienza en 'El' es: {indiceMLetra}");
-//            Console.WriteLine("");
-//        }
-//    }
+            // Encontrar el indice del libro que empiece con "El"
+            int indiceMLetra = libros.FindIndex(p => p.Nombre.StartsWith("El"));
+            Console.WriteLine($"Índice del libro que comienza en 'El' es: {indiceMLetra}");
+            Console.WriteLine("");
+        }
+    }
 
 
-//    // Clase auxiliar para demostraciones
-//    class Persona
-//{    public string Nombre { get; set; }
-//    public int Edad { get; set; }
-//    public string Dni { get; set; }
-//}
+    // Clase auxiliar para demostraciones
+    class Persona
+{    public string Nombre { get; set; }
+    public int Edad { get; set; }
+    public string Dni { get; set; }
+}
 
-//class Libro
-//    {
-//        public string Nombre { get; set; }
-//        public double Precio { get; set; }
-//        public int Stock { get; set; }
-//    }
-//    }
-  }
+class Libro
+    {
+        public string Nombre { get; set; }
+        public double Precio { get; set; }
+        public int Stock { get; set; }
+    }
+    }
+    }
 }
