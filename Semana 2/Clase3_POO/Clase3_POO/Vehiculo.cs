@@ -10,48 +10,48 @@ namespace Clase3_POO
 {
     internal class Vehiculo
     {
-        private string Marca;
+        private string _marca;
         public string PublicMarca
         {
-            get { return Marca; }
-            set { Marca = value; }
+            get { return _marca; }
+            set { _marca = value; }
         }
 
-        private string Modelo;
+        private string _modelo;
         public string PublicModelo
         {
-            get { return Modelo; }
-            set { Modelo = value; }
+            get { return _modelo; }
+            set { _modelo = value; }
         }
 
-        private int Año;
+        private int _año;
         public int PublicAño
         {
-            get { return Año; }
-            set { Año = value; }
+            get { return _año; }
+            set { _año = value; }
         }
 
-        private double Kilometraje;
+        private double _kilometraje;
         public double PublicKilometraje
         {
-            get { return Kilometraje; }
-            set { Kilometraje = value; }
+            get { return _kilometraje; }
+            set { _kilometraje = value; }
         }
 
-        private string TipoDeVehiculo;
+        private string _tipodevehiculo;
         public string PublicTipoDeVehiculo
         {
-            get { return TipoDeVehiculo; }
-            set { TipoDeVehiculo = value; }
+            get { return _tipoDeVehiculo; }
+            set { _tipoDeVehiculo = value; }
         }
 
         public Vehiculo(string marca, string modelo, int año, double kilometraje, string tipodevehiculo)
         {
-            Marca = marca;
-            Modelo = modelo;
-            Año = año;
-            Kilometraje = kilometraje;
-            TipoDeVehiculo = tipodevehiculo;
+            _marca = marca;
+            _modelo = modelo;
+            _año = año;
+            _kilometraje = kilometraje;
+            _tipodevehiculo = tipodevehiculo;
         }
 
  
