@@ -8,7 +8,7 @@ namespace Semana_3
 {
     internal class Vehiculo : IVehiculo
     {
-        public void Encender()
+        public void Encender()  
         {
             Console.WriteLine("Auto Encendido");
         }
