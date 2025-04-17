@@ -8,7 +8,9 @@
 
             var auto = new Vehiculo();
 
-            Console.WriteLine();
+            auto.Encender();
+
+
 
         }
     }
